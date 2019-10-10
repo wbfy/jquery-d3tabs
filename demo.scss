@@ -1,0 +1,89 @@
+$border-color: lightgrey;
+$background-color:white;
+$button-color:orange;
+$button-text:black;
+
+body
+{
+	background-color:#E2E2E2;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1
+{
+	text-align:center;
+}
+.d3tabs-demo
+{
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:$background-color;
+	.tabs
+	{
+		li	/* tab set container */
+		{
+			text-align: center;
+			ul
+			{
+				li /* tab */
+				{
+					border: 1px solid $border-color;
+					padding: 7px 0;
+					&:hover
+					{
+						font-weight:bold;
+					}
+				}
+				li.selected
+				{
+					border-bottom: 1px solid transparent;
+				}
+			}
+		}
+	}
+	.contents
+	{
+		border:1px solid $border-color;
+		border-top:none;
+		padding: 1em;
+	}
+}
+
+input[type=submit]
+{
+	background-color:transparent;
+ 	color:$button-text;
+	border:3px solid $button-color;
+ 	padding:10px;
+	&:hover, &:focus
+	{
+		cursor: pointer;
+	 	background-color:$button-color;
+	}
+}
+
+footer
+{
+	margin-top:2em;
+	text-align:center;
+	font-size:90%;
+}
+
+.clearfix
+{
+	zoom: 1;
+	&:before,
+	&:after
+	{
+		content: '\0020';
+		display: block;
+		height: 0;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+	}
+	&:after
+	{
+		clear: both;
+	}
+}
