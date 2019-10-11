@@ -1,8 +1,9 @@
 {
   "name": "jquery-d3tabs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "jQuery 3d tabs plugin",
   "main": "gulpfile.js",
+  "repository": "https://github.com/wbfy/jquery-d3tabs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
