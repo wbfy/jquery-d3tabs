@@ -1,205 +1,208 @@
 <!DOCTYPE html>
-<head>
-    <title>jQuery 3D Tabs Control</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link href="demo.min.css?v=1.1.1" rel="stylesheet" type="text/css">
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <!-- d3tabs -->
-    <script src="dist/jquery-d3tabs.min.js?v=1.1.1" type="text/javascript"></script>
-    <!-- <script src="src/jquery-d3tabs.js" type="text/javascript"></script> -->
-    <!-- end d3tabs -->
-    <script>
-        $(document).ready(
-            function() {
-                $('.d3tabs-parent-container').d3tabs();
-            }
-        );
-    </script>
-</head>
-<body>
-    <h1>
-        jQuery 3D Tabs Control Example 1
-    </h1>
-	<div class="d3tabs-parent-container">
+<html lang="en">
+    <head>
+        <title>jQuery 3D Tabs Control</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link href="demo.min.css?v=1.1.1" rel="stylesheet" type="text/css">
+        <link rel="alternate" href="https://websitesbuiltforyou.com" hreflang="en"/>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- d3tabs -->
+        <script src="dist/jquery-d3tabs.min.js?v=1.1.1" type="text/javascript"></script>
+        <!-- <script src="src/jquery-d3tabs.js" type="text/javascript"></script> -->
+        <!-- end d3tabs -->
+        <script>
+            $(document).ready(
+                function() {
+                    $('.d3tabs-parent-container').d3tabs();
+                }
+            );
+        </script>
+    </head>
+    <body>
+        <h1>
+            jQuery 3D Tabs Control Example 1
+        </h1>
+        <div class="d3tabs-parent-container">
 
-        <ul class="tab-container clearfix">
-            <li>
-                <ul class="tab-set-1">
-                    <li d3tabs-id="ex1-tab-set-1-main-tab">Tab Set 1 Main Tab</li>
-                    <li d3tabs-id="ex1-tab-set-1-sub-tab-1">Tab Set 1 Sub Tab 1</li>
-                    <li d3tabs-id="ex1-tab-set-1-sub-tab-2">Tab Set 1 Sub Tab 2</li>
-                </ul>
-            </li>
-            <li>
-                <ul class="tab-set-2">
-                    <li d3tabs-id="ex1-tab-set-2-main-tab">Tab Set 2 Main Tab</li>
-                </ul>
-            </li>
-            <li>
-                <ul class="tab-set-3">
-                    <li d3tabs-id="ex1-tab-set-3-main-tab">Tab Set 3 Main Tab</li>
-                    <li d3tabs-id="ex1-tab-set-3-sub-tab-1">Tab Set 3 Sub Tab 1</li>
-                </ul>
-            </li>
-        </ul>
+            <ul class="tab-container clearfix">
+                <li>
+                    <ul class="tab-set-1">
+                        <li d3tabs-id="ex1-tab-set-1-main-tab">Tab Set 1 Main Tab</li>
+                        <li d3tabs-id="ex1-tab-set-1-sub-tab-1">Tab Set 1 Sub Tab 1</li>
+                        <li d3tabs-id="ex1-tab-set-1-sub-tab-2">Tab Set 1 Sub Tab 2</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tab-set-2">
+                        <li d3tabs-id="ex1-tab-set-2-main-tab">Tab Set 2 Main Tab</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="tab-set-3">
+                        <li d3tabs-id="ex1-tab-set-3-main-tab">Tab Set 3 Main Tab</li>
+                        <li d3tabs-id="ex1-tab-set-3-sub-tab-1">Tab Set 3 Sub Tab 1</li>
+                    </ul>
+                </li>
+            </ul>
 
-		<div class="tab-content-container">
+            <div class="tab-content-container">
 
-            <div id="ex1-tab-set-1-main-tab">
-                <p>
-                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
-                    Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-                <p>
-                </p>
-                    Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                    Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-                    dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                </p>
-                <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-1" value="Activate tab set 1 sub tab 1">
-                <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-2" value="Activate tab set 1 sub tab 2">
-                <input type="submit" d3tabs-id="ex1-tab-set-3-main-tab" value="Activate tab set 3 main tab">
-            </div>
-            <div id="ex1-tab-set-1-sub-tab-1">
-                <p>
-                    Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                    Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-                    dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                <p>
-                </p>
-                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
-                    Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-                </p>
-                <input type="submit" d3tabs-id="ex1-tab-set-1-main-tab" value="Click here to close sub tab">
-            </div>
-            <div id="ex1-tab-set-1-sub-tab-2">
-                <p>
-                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
-                    Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                <p>
-                </p>
-                    Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                    Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-                    dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                </p>
-                <p>
-                    x - use the x to close tab
-                </p>
-            </div>
+                <div id="ex1-tab-set-1-main-tab">
+                    <p>
+                        Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                        Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                        massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+                    <p>
+                    </p>
+                        Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                        Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+                        dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                    </p>
+                    <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-1" value="Activate tab set 1 sub tab 1">
+                    <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-2" value="Activate tab set 1 sub tab 2">
+                    <input type="submit" d3tabs-id="ex1-tab-set-3-main-tab" value="Activate tab set 3 main tab">
+                </div>
+                <div id="ex1-tab-set-1-sub-tab-1">
+                    <p>
+                        Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                        Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+                        dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                    <p>
+                    </p>
+                        Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                        Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                        massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+                    </p>
+                    <input type="submit" d3tabs-id="ex1-tab-set-1-main-tab" value="Click here to close sub tab">
+                </div>
+                <div id="ex1-tab-set-1-sub-tab-2">
+                    <p>
+                        massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+                        Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                        Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                    <p>
+                    </p>
+                        Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                        Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+                        dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                    </p>
+                    <p>
+                        x - use the x to close tab
+                    </p>
+                </div>
 
-            <div id="ex1-tab-set-2-main-tab">
-                <p>
-                    Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
-                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-                <p>
-                </p>
-                    Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                    Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-                    dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                </p>
-            </div>
+                <div id="ex1-tab-set-2-main-tab">
+                    <p>
+                        Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                        Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                        massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+                    <p>
+                    </p>
+                        Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                        Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+                        dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                    </p>
+                </div>
 
-            <div id="ex1-tab-set-3-main-tab">
-                <p>
-                    Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
-                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-                <p>
-                </p>
-                    dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                    Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                    Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-                </p>
-                <input type="submit" d3tabs-id="ex1-tab-set-3-sub-tab-1" value="Activate tab set 3 sub tab 1">
-                <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-1" value="Activate tab set 1 sub tab 1">
+                <div id="ex1-tab-set-3-main-tab">
+                    <p>
+                        Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                        Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                        massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+                    <p>
+                    </p>
+                        dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                        Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                        Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+                    </p>
+                    <input type="submit" d3tabs-id="ex1-tab-set-3-sub-tab-1" value="Activate tab set 3 sub tab 1">
+                    <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-1" value="Activate tab set 1 sub tab 1">
+                </div>
+                <div id="ex1-tab-set-3-sub-tab-1">
+                    <p>
+                        Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
+                        Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
+                        massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
+                    <p>
+                    </p>
+                        Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
+                        Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
+                        dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
+                    </p>
+                    <input type="submit" d3tabs-id="ex1-tab-set-3-main-tab" value="Click here to close sub tab">
+                </div>
+
             </div>
-            <div id="ex1-tab-set-3-sub-tab-1">
-                <p>
-                    Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum.
-                    Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu.
-                    massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo.
-                <p>
-                </p>
-                    Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet
-                    Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut
-                    dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.
-                </p>
-                <input type="submit" d3tabs-id="ex1-tab-set-3-main-tab" value="Click here to close sub tab">
+        </div>
+
+        <h1>
+            jQuery 3D Tabs Control Example 2
+        </h1>
+        <div class="d3tabs-parent-container">
+
+            <ul class="tab-container clearfix">
+                <li>
+                    <ul class="reporting">
+                        <li d3tabs-id="report-criteria">Reporting Criteria</li>
+                        <li d3tabs-id="report-results">Results</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="admin">
+                        <li d3tabs-id="admin">Admin</li>
+                        <li d3tabs-id="admin-customers">Manage Customers</li>
+                        <li d3tabs-id="admin-chpass">Change Password</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="tab-content-container">
+
+                <div id="report-criteria">
+                    <p>
+                        Set some criteria
+                    </p>
+                    <input type="submit" d3tabs-id="report-results" value="Run Report >>">
+                </div>
+                <div id="report-results">
+                    <p>
+                        Yes, got some results!
+                    </p>
+                    <input type="submit" d3tabs-id="report-criteria" value="< Close">
+                </div>
+
+                <div id="admin">
+                    <input type="submit" d3tabs-id="admin-customers" value="Manage Customers">
+                    <input type="submit" d3tabs-id="admin-chpass" value="Change My Password">
+                </div>
+                <div id="admin-customers">
+                    <p>
+                        List of customers
+                    </p>
+                    <input type="submit" d3tabs-id="admin" value="< Close">
+                </div>
+                <div id="admin-chpass">
+                    <p>
+                        Change password
+                    </p>
+                    <input type="submit" d3tabs-id="admin" value="< Close">
+                </div>
+
             </div>
 
         </div>
-	</div>
 
-    <h1>
-        jQuery 3D Tabs Control Example 2
-    </h1>
-	<div class="d3tabs-parent-container">
-
-        <ul class="tab-container clearfix">
-            <li>
-                <ul class="reporting">
-                    <li d3tabs-id="report-criteria">Reporting Criteria</li>
-                    <li d3tabs-id="report-results">Results</li>
-                </ul>
-            </li>
-            <li>
-                <ul class="admin">
-                    <li d3tabs-id="admin">Admin</li>
-                    <li d3tabs-id="admin-customers">Manage Customers</li>
-                    <li d3tabs-id="admin-chpass">Change Password</li>
-                </ul>
-            </li>
-        </ul>
-
-		<div class="tab-content-container">
-
-            <div id="report-criteria">
-                <p>
-                    Set some criteria
-                </p>
-                <input type="submit" d3tabs-id="report-results" value="Run Report >>">
+        <footer>
+            <div>
+                <a href="https://websitesbuiltforyou.com/javascript/jquery/d3tabs">jquery-d3tabs</a>
             </div>
-            <div id="report-results">
-                <p>
-                    Yes, got some results!
-                </p>
-                <input type="submit" d3tabs-id="report-criteria" value="< Close">
+            <div>
+                Copyright (c) 2015 Steve Perkins, <a href="https://websitesbuiltforyou.com">Websites Built For You</a>
             </div>
-
-            <div id="admin">
-                <input type="submit" d3tabs-id="admin-customers" value="Manage Customers">
-                <input type="submit" d3tabs-id="admin-chpass" value="Change My Password">
+            <div>
+                More at <a href="https://github.com/wbfy/jquery-d3tabs">github</a>
             </div>
-            <div id="admin-customers">
-                <p>
-                    List of customers
-                </p>
-                <input type="submit" d3tabs-id="admin" value="< Close">
-            </div>
-            <div id="admin-chpass">
-                <p>
-                    Change password
-                </p>
-                <input type="submit" d3tabs-id="admin" value="< Close">
-            </div>
-
-        </div>
-
-	</div>
-
-    <footer>
-        <div>
-            <a href="https://websitesbuiltforyou.com/javascript/jquery/d3tabs">jquery-d3tabs</a>
-        </div>
-        <div>
-            Copyright (c) 2015 Steve Perkins, <a href="https://websitesbuiltforyou.com">Websites Built For You</a>
-        </div>
-        <div>
-            More at <a href="https://github.com/wbfy/jquery-d3tabs">github</a>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
+</html>
