@@ -5,4 +5,5 @@
 * Updated README.MD
 * Some changes to plugin code
 * Updated copyright and licence
-
+= 1.1.1 =
+* Added box-sizing property to demo.scss
