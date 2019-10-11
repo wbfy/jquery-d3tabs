@@ -1,5 +1,5 @@
 # jQuery 3D Tabs Control
-## Version 1.1.0
+## Version 1.1.1
 
 ## Synopsis
 This is a simple jQuery plugin control that allows easy creation of a tabbed interface.
