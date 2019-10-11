@@ -11,7 +11,7 @@ gulp.task
 	(
 		'compile.project',
 		function (doneCallBack) {
-			gulp.src(['src/js/*.js'])
+			gulp.src(['src/*.js'])
 				.pipe(concat('jquery-d3tabs.min.js'))
 				.pipe(uglify())
 				.pipe(gulp.dest('dist'));

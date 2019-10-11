@@ -12,13 +12,13 @@ h1
 {
 	text-align:center;
 }
-.d3tabs-demo
+.d3tabs-parent-container
 {
 	width:800px;
 	margin-left:auto;
 	margin-right:auto;
 	background-color:$background-color;
-	.tabs
+	.tab-container
 	{
 		li	/* tab set container */
 		{
@@ -41,7 +41,7 @@ h1
 			}
 		}
 	}
-	.contents
+	.tab-content-container
 	{
 		border:1px solid $border-color;
 		border-top:none;
@@ -67,6 +67,10 @@ footer
 	margin-top:2em;
 	text-align:center;
 	font-size:90%;
+	a
+	{
+		text-decoration:none;
+	}
 }
 
 .clearfix

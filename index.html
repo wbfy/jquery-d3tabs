@@ -3,131 +3,161 @@
     <title>jQuery 3D Tabs Control</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link href="demo.min.css" rel="stylesheet" type="text/css">
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous">
-    </script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- d3tabs -->
-    <link href="dist/jquery-d3tabs.min.css" rel="stylesheet" type="text/css">
     <script src="dist/jquery-d3tabs.min.js" type="text/javascript"></script>
+    <!-- <script src="src/jquery-d3tabs.js" type="text/javascript"></script> -->
     <!-- end d3tabs -->
     <script>
         $(document).ready(
             function() {
-                $('.d3tabs-demo').d3tabs();
+                $('.d3tabs-parent-container').d3tabs();
             }
         );
     </script>
 </head>
 <body>
     <h1>
-        jQuery 3D Tabs Control Examples
+        jQuery 3D Tabs Control Example 1
     </h1>
-	<div class="d3tabs-demo">
-        <!-- Tabs -->
-		<div class="tabs clearfix">
-			<ul>
-				<li>
-					<ul>
-						<li d3tabs-id="tab-set-1">
-                            Tab Set 1 Main Tab
-						</li>
-						<li d3tabs-id="tab-set-1-sub-1">
-                            Tab Set 1 Sub Tab 1
-						</li>
-						<li d3tabs-id="tab-set-1-sub-2">
-                            Tab Set 1 Sub Tab 2
-						</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li d3tabs-id="tab-set-2">
-                            Tab Set 2 Main Tab
-						</li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li d3tabs-id="tab-set-3">
-                            Tab Set 3 Main Tab
-						</li>
-						<li d3tabs-id="tab-set-3-sub-1">
-                            Tab Set 3 Sub Tab 1
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-        <!-- Tab content -->
-		<div class="contents clearfix">
-            <!-- Tab set 1 -->
-            <div id="tab-set-1">
+	<div class="d3tabs-parent-container">
+
+        <ul class="tab-container clearfix">
+            <li>
+                <ul class="tab-set-1">
+                    <li d3tabs-id="ex1-tab-set-1-main-tab">Tab Set 1 Main Tab</li>
+                    <li d3tabs-id="ex1-tab-set-1-sub-tab-1">Tab Set 1 Sub Tab 1</li>
+                    <li d3tabs-id="ex1-tab-set-1-sub-tab-2">Tab Set 1 Sub Tab 2</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="tab-set-2">
+                    <li d3tabs-id="ex1-tab-set-2-main-tab">Tab Set 2 Main Tab</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="tab-set-3">
+                    <li d3tabs-id="ex1-tab-set-3-main-tab">Tab Set 3 Main Tab</li>
+                    <li d3tabs-id="ex1-tab-set-3-sub-tab-1">Tab Set 3 Sub Tab 1</li>
+                </ul>
+            </li>
+        </ul>
+
+		<div class="tab-content-container">
+
+            <div id="ex1-tab-set-1-main-tab">
                 <p>
                     This is the main tab of tab set 1
                 </p>
-                <input type="submit" d3tabs-id="tab-set-1-sub-1" value="Click here to see tab set 1 sub tab 1">
-                <input type="submit" d3tabs-id="tab-set-1-sub-2" value="Click here to see tab set 1 sub tab 2">
+                <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-1" value="Click here to activate tab set 1 sub tab 1">
+                <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-2" value="Click here to activate tab set 1 sub tab 2">
+                <input type="submit" d3tabs-id="ex1-tab-set-3-main-tab" value="Click here to activate tab set 3 main tab">
             </div>
-            <div id="tab-set-1-sub-1">
+            <div id="ex1-tab-set-1-sub-tab-1">
                 <p>
                     This is sub tab 1 of tab set 1
                 </p>
-                <p>
-                    Click the x to close
-                </p>
-                <p>
-                    <input type="submit" d3tabs-id="tab-set-1" value="Or use this button to close">
-                </p>
+                <input type="submit" d3tabs-id="ex1-tab-set-1-main-tab" value="Click here to close sub tab">
             </div>
-            <div id="tab-set-1-sub-2">
+            <div id="ex1-tab-set-1-sub-tab-2">
                 <p>
                     This is sub tab 2 of tab set 1
                 </p>
                 <p>
-                    Click the x to close
+                    x - use the x to close tab
                 </p>
             </div>
 
-            <!-- Tab set 2 -->
-            <div id="tab-set-2">
-                <div class="inner">
-                    <p>
-                        This is the main tab of tab set 2
-                    </p>
-                </div>
+            <div id="ex1-tab-set-2-main-tab">
+                <p>
+                    This is the main tab of tab set 2
+                </p>
             </div>
 
-            <!-- Tab set 3 -->
-            <div id="tab-set-3">
-                <div class="inner">
-                    <p>
-                        This is the main tab of tab set 3
-                    </p>
-                    <input type="submit" d3tabs-id="tab-set-3-sub-1" value="Click here to see tab set 3 sub tab 1">
-                </div>
+            <div id="ex1-tab-set-3-main-tab">
+                <p>
+                    This is the main tab of tab set 3
+                </p>
+                <input type="submit" d3tabs-id="ex1-tab-set-3-sub-tab-1" value="Click here to activate tab set 3 sub tab 1">
+                <input type="submit" d3tabs-id="ex1-tab-set-1-sub-tab-1" value="Click here to activate tab set 1 sub tab 1">
             </div>
-            <div id="tab-set-3-sub-1">
-                <div class="inner">
-                    <p>
-                        This is sub tab 1 of tab set 3
-                    </p>
-                    <p>
-                        Click the x to close
-                    </p>
-                    <p>
-                        <input type="submit" d3tabs-id="tab-set-3" value="Or use this button to close">
-                    </p>
-                    <p>
-                        <input type="submit" d3tabs-id="tab-set-1" value="Go to Tab Set 1 Main Tab">
-                    </p>
-                </div>
+            <div id="ex1-tab-set-3-sub-tab-1">
+                <p>
+                    This is sub tab 1 of tab set 3
+                </p>
+                <input type="submit" d3tabs-id="ex1-tab-set-3-main-tab" value="Click here to close sub tab">
             </div>
+
         </div>
 	</div>
+
+    <h1>
+        jQuery 3D Tabs Control Example 2
+    </h1>
+	<div class="d3tabs-parent-container">
+
+        <ul class="tab-container clearfix">
+            <li>
+                <ul class="reporting">
+                    <li d3tabs-id="report-criteria">Reporting Criteria</li>
+                    <li d3tabs-id="report-results">Results</li>
+                </ul>
+            </li>
+            <li>
+                <ul class="admin">
+                    <li d3tabs-id="admin">Admin</li>
+                    <li d3tabs-id="admin-customers">Manage Customers</li>
+                    <li d3tabs-id="admin-chpass">Change Password</li>
+                </ul>
+            </li>
+        </ul>
+
+		<div class="tab-content-container">
+
+            <div id="report-criteria">
+                <p>
+                    Set some criteria
+                </p>
+                <input type="submit" d3tabs-id="report-results" value="Run Report >>">
+            </div>
+            <div id="report-results">
+                <p>
+                    Yes, got some results!
+                </p>
+                <input type="submit" d3tabs-id="report-criteria" value="< Close">
+            </div>
+
+            <div id="admin">
+                <input type="submit" d3tabs-id="admin-customers" value="Manage Customers">
+                <input type="submit" d3tabs-id="admin-chpass" value="Change My Password">
+            </div>
+            <div id="admin-customers">
+                <p>
+                    List of customers
+                </p>
+                <input type="submit" d3tabs-id="admin" value="< Close">
+            </div>
+            <div id="admin-chpass">
+                <p>
+                    Change password
+                </p>
+                <input type="submit" d3tabs-id="admin" value="< Close">
+            </div>
+
+        </div>
+
+	</div>
+
     <footer>
-        jquery-d3tabs<br>
-        Copyright (c) 2013-2019 Websites Built For You
+        <div>
+            <a href="https://websitesbuiltforyou.com/javascript/jquery/d3tabs">jquery-d3tabs</a>
+        </div>
+        <div>
+            Copyright (c) 2015 Steve Perkins, <a href="https://websitesbuiltforyou.com">Websites Built For You</a>
+        </div>
+        <div>
+            More at <a href="https://github.com/wbfy/jquery-d3tabs">github</a>
+        </div>
     </footer>
 </body>
