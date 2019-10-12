@@ -59,6 +59,7 @@ View the demo: https://websitesbuiltforyou.com/demos/jquery/d3tabs/
                 </p>
             </div>
         </div>
+    </div>
 ```
 You can use any content, CSS class names and styles you want as long as you keep the basic structure of UL>LI>UL>LI for the tabs-container and DIV>DIV for the tab content container.
 Any element within the tab content container with an attribute of d3tabs-id will be made clickable. When clicked, the d3tabs-id will be used to determine which tab is activated.
