@@ -12,7 +12,7 @@ View the demo: https://websitesbuiltforyou.com/demos/jquery/d3tabs/
 
 ### Basic HTML Markup
 ```HTML
-	<div class="d3tabs-parent-container">
+    <div class="d3tabs-parent-container">
 
         <ul class="tab-container clearfix">
             <li>
@@ -29,7 +29,7 @@ View the demo: https://websitesbuiltforyou.com/demos/jquery/d3tabs/
             </li>
         </ul>
 
-		<div class="tab-content-container">
+        <div class="tab-content-container">
             <div id="tab-set-1-main-tab">
                 <p>
                     This is the main tab of tab set 1
