@@ -84,6 +84,6 @@ And that's it!
 Steve Perkins
 
 ## Licence
-The class is licenced under the MIT licence
+The class is licensed under the MIT licence.
 
 Copyright (c) 2015 Steve Perkins, [Websites Built For You](https://websitesbuiltforyou.com)
