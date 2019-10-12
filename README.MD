@@ -86,4 +86,4 @@ Steve Perkins
 ## Licence
 The class is licenced under the MIT licence
 
-Copyright (c) 2015 Steve Perkins, Websites Built For You
+Copyright (c) 2015 Steve Perkins, [Websites Built For You](https://websitesbuiltforyou.com)
