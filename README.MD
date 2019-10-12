@@ -81,7 +81,7 @@ Initialise the control:
 And that's it!
 
 ## Contributors
-Steve Perkins - Websites Built For You
+Steve Perkins
 
 ## Licence
 The class is licenced under the MIT licence
